@@ -23,6 +23,8 @@ public class TimeFormat {
 			period = "PM";
 		} else if (hours == 12) {
 			hours = 00;
+		} else {
+			period = "AM";
 		}
 		if (minutes < 10) {
 			System.out.println(hours + ":0" + minutes + " " + period);
