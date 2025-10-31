@@ -11,6 +11,6 @@ public class Bill3 {
 		double split = price / 3.0;
 		split = Math.ceil(split);
 		System.out.println(
-				"Dear " + name3 + ", " + name2 + " and " + name1 + ", pay " + split + " Shekels each");
+				"Dear " + name3 + ", " + name2 + " and, " + name1 + ": pay " + split + " Shekels each");
 	}
 }

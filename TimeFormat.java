@@ -21,12 +21,14 @@ public class TimeFormat {
 		if (hours > 12) {
 			hours = hours - 12;
 			period = "PM";
-		} else if (hours == 24) {
-			hours = 00;
+		} else if (hours == 00) {
+			hours = 0;
 		} else {
 			period = "AM";
 		}
-		if (minutes < 10) {
+		if (hours == 00 && minutes < 10) {
+			System.out.println("0" + hours + ":0" + minutes + " " + period);
+		} else if (minutes < 10) {
 			System.out.println(hours + ":0" + minutes + " " + period);
 		} else {
 			System.out.println(hours + ":" + minutes + " " + period);
