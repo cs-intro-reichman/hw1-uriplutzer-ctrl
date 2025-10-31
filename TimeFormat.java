@@ -21,7 +21,7 @@ public class TimeFormat {
 		if (hours > 12) {
 			hours = hours - 12;
 			period = "PM";
-		} else if (hours == 12) {
+		} else if (hours == 24) {
 			hours = 00;
 		} else {
 			period = "AM";
